@@ -8,7 +8,6 @@
     tools:context=".MainActivity"
     android:orientation="vertical"
     >
-
    <LinearLayout
        android:layout_weight="1.5"
 
@@ -28,7 +27,7 @@
            android:layout_weight="1.5"
            android:layout_width="match_parent"
            android:layout_height="0dp"
-           android:text="A"
+           android:text="B"
            android:background="#F6F5F5"
            android:gravity="center"
            android:textSize="30sp"
@@ -37,7 +36,7 @@
            android:layout_weight="1.5"
            android:layout_width="match_parent"
            android:layout_height="0dp"
-           android:text="A"
+           android:text="C"
            android:background="#0037FF"
            android:gravity="center"
            android:textSize="30sp"
@@ -46,12 +45,11 @@
            android:layout_weight="1.5"
            android:layout_width="match_parent"
            android:layout_height="0dp"
-           android:text="A"
+           android:text="D"
            android:background="#2FFF00"
            android:gravity="center"
            android:textSize="30sp"
            />
-
    </LinearLayout>
     <LinearLayout
         android:layout_weight="1.5"
@@ -72,7 +70,7 @@
             android:layout_weight="1.5"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:text="A"
+            android:text="B"
             android:background="#F6F5F5"
             android:gravity="center"
             android:textSize="30sp"
@@ -81,7 +79,7 @@
             android:layout_weight="1.5"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:text="A"
+            android:text="C"
             android:background="#0037FF"
             android:gravity="center"
             android:textSize="30sp"
@@ -90,12 +88,10 @@
             android:layout_weight="1.5"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:text="A"
+            android:text="D"
             android:background="#2FFF00"
             android:gravity="center"
             android:textSize="30sp"
             />
     </LinearLayout>
-
-
 </LinearLayout>
