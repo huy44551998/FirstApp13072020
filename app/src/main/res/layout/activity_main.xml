@@ -4,129 +4,57 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal"
+    android:orientation="vertical"
     android:weightSum="10"
     tools:context=".MainActivity">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+   android:padding="10dp"
+    android:layout_gravity="center"
+    android:text="Loto Game"
+    android:gravity="center"
+    android:textSize="30sp"
+    android:textColor="#3A2859"
+    android:textAllCaps="true"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
 
-    <LinearLayout
-        android:layout_width="0dp"
+        android:inputType="number"
+        android:maxLength="3"
+        android:hint="Insert minimum number"
+        android:id="@+id/minNumber"
+        android:imeOptions="actionSearch"/>
+    <EditText
 
-        android:layout_height="match_parent"
-        android:layout_weight="2.5"
-        android:orientation="vertical">
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="2.5"
-            android:background="#B300FF"
-            android:gravity="center"
-            android:text="A"
-            android:textSize="30sp" />
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="2.5"
-            android:background="#C69BD8"
-            android:gravity="center"
-            android:text="B"
-            android:textSize="30sp" />
+        android:inputType="number"
+        android:maxLength="3"
+        android:hint="Insert maximum number"
+        android:id="@+id/maxNumber"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:text="Random"
+        android:id="@+id/randombtn"
+        android:background="@color/colorAccent"/>
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1 - 2 - 3 - 4"
+        android:textSize="20sp"
+        android:id="@+id/result"
+        />
 
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_weight="7.5"
-        android:orientation="vertical"
-        >
-
-        <LinearLayout
-            android:layout_weight="5"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:orientation="vertical">
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="2.5"
-                android:background="#88768F"
-                android:gravity="center"
-                android:text="C"
-                android:textSize="30sp" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="2.5"
-                android:background="#2C875B"
-                android:gravity="center"
-                android:text="D"
-                android:textSize="30sp" />
-
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="5"
-            android:orientation="horizontal">
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="5"
-                android:orientation="vertical">
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="2.5"
-                    android:background="#40A5B8"
-                    android:gravity="center"
-                    android:text="E"
-                    android:textSize="30sp" />
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="2.5"
-                    android:background="#C82063"
-                    android:gravity="center"
-                    android:text="F"
-                    android:textSize="30sp" />
-            </LinearLayout>
-
-
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="5"
-                android:orientation="vertical">
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="2.5"
-                    android:background="#3DF161"
-                    android:gravity="center"
-                    android:text="G"
-                    android:textSize="30sp" />
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="2.5"
-                    android:background="#543760"
-                    android:gravity="center"
-                    android:text="H"
-                    android:textSize="30sp" />
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="2.5"
-                    android:background="#DFAD55"
-                    android:gravity="center"
-                    android:text="I"
-                    android:textSize="30sp" />
-            </LinearLayout>
-
-        </LinearLayout>
-
+    </ScrollView>
 
     </LinearLayout>
-    </LinearLayout></LinearLayout>
